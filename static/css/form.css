@@ -1,6 +1,5 @@
 body {
   background-color: #2B3E50;
-  /*background-color: #90A4AE;*/
   font-family: 'Lato' !important;
 }
 
@@ -127,12 +126,7 @@ button:active {
   /*margin: 12px 0;*/
 }
 
-/*#error-symbol {
-  float: left;
-}*/
-
 #error-message {
-  /*float: left;*/
   font-size: .90rem;
   padding: 5px 1px;
 }
@@ -185,7 +179,6 @@ footer a:hover {
   #error-message {
     float: none;
     padding: 11px 0;
-    /*might need to make 0??*/
   }
 }
 
