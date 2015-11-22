@@ -56,7 +56,7 @@ def get_pics(subreddit, submissions = '25'):
             links.append(link)
         elif re.search('(https?://)?(i.)?imgur.com/[A-Za-z0-9]{7}(?!/)',link) != None:
             links.append(link + '.jpg')  
-        #----------Gets albums and Gallerys-----------
+        #----------Gets albums and Galleries-----------
         elif re.search('(https?://)?(i.)?imgur.com/', link) != None: #need to adjust links
             imgur = requests.get(link)
             proper_links = re.findall('img src="//i.*?"', imgur.text)
@@ -74,6 +74,6 @@ if __name__ == '__main__':
 
 # TODO
 # instantaneous validation (validates info as soon as you leave text area) 
-# make error page
-# limit number of submissions to only 3 characters
 # create a download function    
+# limit number of submissions to only 3 characters
+# make error page better
