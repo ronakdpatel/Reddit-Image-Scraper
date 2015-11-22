@@ -1,7 +1,7 @@
 (function() {
   'use strict';
+  var form = document.getElementById('form');
   function validateForm() {
-    var form = document.getElementById('form');
     var input = document.getElementById('num-of-submissions');
     var submissions = input.value;
     var errorSymbol = document.getElementById('error-symbol');
